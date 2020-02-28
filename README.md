@@ -49,3 +49,8 @@ How much time did you spend on this test?
 Can you explain the technical choice you made for the CSS and JavaScript?
 
 If you had more time to spend on the test, what would you like to add to your solution?
+
+
+## Submission
+
+Please fork this repository and send us a pull request.
