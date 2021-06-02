@@ -18,10 +18,11 @@ Both pages must be protected by a login page, as designed below:
 ## Task requirements
 
 - Use semantic, accessible and valid HTML mark-up.
-- Style the login page so that it looks like the design. This can be done in CSS or SCSS.
+- Style the login page so that it looks like the design. This can be done in CSS or SCSS files but don't use CSS-in-JS
 - Mock API calls and keeps a logic similar as if you were using a real API. See Example below.
 
 ```javascript
+const USERS = [{id: 1, email: "user@mail.com"}, ...]
 function getUsers () {
   return [{id: 1, ... }]
 }
