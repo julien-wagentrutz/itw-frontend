@@ -2,16 +2,17 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Summary
 
-The goal of this test is to make a simple web app with authentication.
+The goal of this test is to make a simple web app with an authentication.
 
 We have prepared the code using Create React App, but please change whatever you want (CSS files, HTML structure, JS structure...).
 
-There are two pages on this app:
+There are 3 pages on this app:
 
+- Login page
 - Homepage: showing the current user information (email, first name, etc…)
 - Administration page: listing all the users
 
-Both pages must be protected by a login page, as designed below:
+The Homepage and administration must be protected by a login page, as designed below:
 
 ![Login design](design.png?raw=true)
 
@@ -24,7 +25,7 @@ Both pages must be protected by a login page, as designed below:
 ```javascript
 const USERS = [{id: 1, email: "user@mail.com"}, ...]
 function getUsers () {
-  return [{id: 1, ... }]
+  return USERS
 }
 ```
 
@@ -36,10 +37,10 @@ function getUsers () {
 
 ## Important considerations
 
-- We are not looking for pixel-perfect design. Please just do CSS for the login page and show us your approach of styling components.
+- We are not looking for pixel-perfect design. Please just do CSS for the login page and show us your approach of styling.
 - Don’t use CSS library or grid system.
 - Don’t overcomplicate the JavaScript and please don’t use unnecessary plugins.
-- We recommend to do the test in ~1-2 hours depending on your level – if you want to spend more or less time on it, that’s completely up to you.
+- We recommend to do the test in ~2 hours depending on your level – if you want to spend more or less time on it, that’s completely up to you.
 
 ## Questions
 
