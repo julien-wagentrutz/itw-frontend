@@ -1,13 +1,120 @@
-body {
+/**
+    Variable
+ */
+
+:root
+{
+  --main-bg-color: #EEE;
+  --white-color: #FFF;
+  --focus-color: #4389F4;
+  --action-color: #24BBAD;
+  --main-font-color: #22252A;
+  --passif-color: #DDD;
+  --border-radius: 3px;
+}
+
+body
+{
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
 }
 
-code {
+code
+{
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/**
+  Login page
+ */
+
+.login
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: var(--main-bg-color);
+}
+
+.login .auth
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--passif-color);
+  background: var(--white-color);
+}
+
+/* Input*/
+
+.login .auth .auth__input
+ {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  margin: 20px;
+ }
+
+.login .auth .auth__label span
+{
+  position: absolute;
+  bottom: 5px;
+  left: 0px;
+  display: flex;
+  flex-direction: column;
+  opacity: 0.5;
+  transition: transform 0.5s, opacity;
+  pointer-events: none;
+}
+
+:not(.login .auth .auth__input-field[value=""]) ~  span
+{
+  color: var(--focus-color);
+  transform: translate(-5px,-20px) scale(0.8);
+  opacity: 1;
+}
+
+.login .auth .auth__input-field
+{
+  height: 25px;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid var(--passif-color);
+}
+
+.login .auth .auth__input-field:focus-within
+{
+  outline: none;
+  border-bottom: 2px solid var(--focus-color);
+}
+
+
+/* Submit button */
+.login .auth .auth__submit-button
+{
+  margin: 20px;
+  padding: 15px 35px;
+  color: var(--white-color);
+  text-transform: uppercase;
+  border: none;
+  border-radius: var(--border-radius);
+  background: var(--action-color);
+  cursor: pointer;
+}
+
+.auth__error-message
+{
+  font-size: 0.6em;
+  color: #dd0000;
 }

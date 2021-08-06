@@ -48,10 +48,18 @@ Please edit the README file to answer the question below:
 
 How much time did you spend on this test?
 
++ I spent about 4 hours on it, it has a fair amount of React knowledge that I didn't have
+
+
 Can you explain the technical choice you made for the CSS and JavaScript?
 
-If you had more time to spend on the test, what would you like to add to your solution?
 
+ + For the management of routes and authentication, I installed react-router-dom.  The management of the user as a session is managed with the localStorage. I didn't use sass because the project was small and I optimized using pseudo-class / pseudo-elements
+
+
+If you had more time to spend on the test, what would you like to add to your solution?
+    
+ + I would add more security on the form (password hash, injection). Better design for the admin page and homepage. 
 
 ## Submission
 
